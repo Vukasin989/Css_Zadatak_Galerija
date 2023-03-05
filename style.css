@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+}
+#Heading {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: gray;
+    letter-spacing: 1px;
+    text-align: left;
+    
+}
+
+#main_box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 1280px;
+    grid-gap:2rem;
+    margin: 0 auto;
+}
+
+.box {
+    position: relative;
+    height: 200px;
+    border-radius: 12px;
+    border: 1px solid gray;
+}
+
+.box p {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+
+}
+
+.box img {
+    background-color: #b3d4fc;
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    border-top-left-radius: 0.6875rem;
+    border-top-right-radius: 0.6875rem;
+}
+
+#Paragraph {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+#Paragraph p {
+    text-align: left;
+}
+
+@media screen and (max-width: 1180px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
